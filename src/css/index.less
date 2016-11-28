@@ -1,0 +1,46 @@
+.no-upper-case{
+	text-transform: none;
+}
+
+.color-grey{
+	background-color: grey;
+}
+
+#padding-bottom{
+	padding-bottom: 10px;
+}
+
+.width-min-content{
+	width: min-content;
+}
+
+.no-margin{
+	margin: 0px 0px 0px 0px;
+}
+
+.no-padding{
+	padding: 0px 0px 0px 0px;
+}
+
+.color-white{
+	background-color:#eee;
+}
+
+#float-none{
+	float:none;
+}
+
+.btn.height-auto {
+	height:auto;
+}
+
+.property-sm(@property-name, @value) {
+  @media screen and (max-width: 992px){
+    @property: @property-name;
+    @{property}: @value;
+  }
+}
+
+.padding-sm{
+  .property-sm(padding, 0 1em);
+}
