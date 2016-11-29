@@ -6,8 +6,8 @@ var express = require('express'),
 
 app.use(bodyParser.json())
 app.use('/node_modules', express.static(__dirname + '/node_modules'))
-app.use('/src', express.static(__dirname + '/src'))
 app.use('/app', express.static(__dirname + '/src/app'))
+app.use('/css', express.static(__dirname + '/src/css'))
 app.use('/common', express.static(__dirname + '/src/app/common'))
 app.use('/components', express.static(__dirname + '/src/app/components'))
 
