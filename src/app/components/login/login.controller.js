@@ -1,8 +1,11 @@
 function LoginController(){
+
+  var ctrl = this
   
-  var email = function(){
-    var el = document.getElementById('email')
-    console.log(el)
+  ctrl.submit = function(){
+
+    var req = new XMLHttpRequest()
+
   }
 
 }
