@@ -1,10 +1,20 @@
-function LoginController(){
+function LoginController($http){
 
-  var ctrl = this
-  
-  ctrl.submit = function(){
+  this.submit = function (userForm) {
 
-    var req = new XMLHttpRequest()
+    var url = '/login',
+
+        data = userForm
+
+        success = function(){
+          console.log('success')
+        },
+
+        failure = function(){
+          console.log('failure')
+        }
+
+    return $http.post(url, data).then(success, failure)
 
   }
 
