@@ -21,5 +21,5 @@ function LoginController($http){
 }
 
 angular
-  .module('components.login')
+  .module('components.auth')
   .controller('LoginController', LoginController)

@@ -5,11 +5,10 @@ var uploadPics = {
 angular
   .module('components.upload-pics')
   .component('uploadPics', uploadPics)
-  .config(function($locationProvider, $stateProvider){
+  .config(function($stateProvider){
     $stateProvider
       .state('upload-pics', {
         url: '/',
         component: 'uploadPics'
       })
-    $locationProvider.html5Mode(true)
   })

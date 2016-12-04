@@ -1,10 +1,10 @@
 var login = {
-  templateUrl: 'components/login/login.html',
+  templateUrl: 'components/auth/login/login.html',
   controller: 'LoginController'
 }
 
 angular
-  .module('components.login')
+  .module('components.auth')
   .component('login', login)
   .config(function($stateProvider){
     $stateProvider
