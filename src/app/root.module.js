@@ -3,6 +3,6 @@ angular
     'common',
     'components'
   ])
-  .config(function($httpProvider){
-    $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
+  .config(function($locationProvider){
+    $locationProvider.html5Mode(true)
   })
