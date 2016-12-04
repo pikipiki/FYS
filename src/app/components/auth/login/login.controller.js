@@ -1,22 +1,12 @@
-function LoginController($http){
+function LoginController(){
 
-  this.submit = function (userForm) {
 
-    var url = '/login',
-
-        data = userForm
-
-        success = function(){
-          console.log('success')
-        },
-
-        failure = function(){
-          console.log('failure')
-        }
-
-    return $http.post(url, data).then(success, failure)
-
+  this.submit = function(userForm){
+    console.log(2)
+    console.log(userForm)
   }
+
+  // this.submit = AuthService.submit(myForm)
 
 }
 
