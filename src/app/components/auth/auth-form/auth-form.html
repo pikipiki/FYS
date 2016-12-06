@@ -1,19 +1,29 @@
-<form action="#" method="post" id="form" name="ctrl.user.form">
+<form action="#" method="post" id="form" name="form">
   <div class="row">
     <div class="input-field col s12 m12 l12">
-      <input name="email" type="email" class="validate" penholder="name@email.com" ng-model="ctrl.user.email">
-      <label for="email">Email</label>        
+      <label for="email">Email</label>
+      <input 
+        name="email" 
+        type="email" 
+        class="validate" 
+        penholder="name@email.com" ng-model="email">      
     </div>
   </div>
   <div class="row">
     <div class="input-field col s12 m12 l12">
-      <input name="password" type="password" class="validate" ng-model="ctrl.user.password">
-      <label for="password">Password</label>      
+      <label for="password">Password</label> 
+      <input 
+        name="password" 
+        type="password" 
+        class="validate" 
+        ng-model="password">
     </div>
   </div>
   <div class="row">
     <div class="col s12 m12 l12 center-align">
-      <a class="waves-effect waves-light btn-large" ng-click="$ctrl.submit(ctrl.user.form)">Log in</a>     
+      <a class="waves-effect waves-light btn-large no-upper-case" ng-click="$ctrl.submit()">
+        {{ $ctrl.button }}
+      </a>     
     </div>
   </div>
 </form>

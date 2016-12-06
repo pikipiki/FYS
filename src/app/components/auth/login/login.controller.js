@@ -1,12 +1,8 @@
 function LoginController(){
 
-
-  this.submit = function(userForm){
-    console.log(2)
-    console.log(userForm)
+  this.submit = function(){
+    console.log("regarde le gros")
   }
-
-  // this.submit = AuthService.submit(myForm)
 
 }
 
