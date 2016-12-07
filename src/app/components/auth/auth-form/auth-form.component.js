@@ -1,10 +1,5 @@
 var authForm = {
   templateUrl: 'components/auth/auth-form/auth-form.html',
-  bindings: {
-    button: "@",  
-    onSubmit: "&",
-    oneat:"&"
-  },
   controller: 'AuthFormController'
 }
 

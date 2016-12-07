@@ -1,20 +1,16 @@
 var AuthService = function($http) {
 
-  this.submit = function (userForm) {
+  this.submit = function (url, data) {
 
-    var url = '/login',
+    function success(){
+      console.log('success')
+    }
 
-        data = userForm
+    function fail(){
+      console.log('fail')
+    }
 
-        success = function(){
-          console.log('success')
-        },
-
-        failure = function(){
-          console.log('failure')
-        }
-
-    return $http.post(url, data).then(success, failure)
+    return $http.post(url, data).then(success, fail)
 
   }
 

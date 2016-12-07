@@ -1,8 +1,5 @@
 var register = {
   templateUrl: 'components/auth/register/register.html',
-  bindings: {
-    button: '@'
-  }
 }
 
 angular

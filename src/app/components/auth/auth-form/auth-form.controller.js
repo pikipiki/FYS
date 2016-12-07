@@ -1,6 +1,9 @@
-var AuthFormController = function(){
-  console.log('controller')
-  scope.oneat()
+var AuthFormController = function(AuthService){
+
+  this.submit = function() {
+    AuthService.submit('/login', this.user)
+  }
+    
 }
 
 angular

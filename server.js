@@ -15,19 +15,10 @@ app.use('/components', express.static(__dirname + '/src/app/components'))
 mongoose.connect('mongodb://robagro4granpeti:rovkw3jgn9@jello.modulusmongo.net:27017/ytyriN4e')
 
 app.post('/login', (req, res) => {
-  var typedEmail = req.body.email['$modelValue'],
-      typedPass = req.body.password['$modelValue']
+  var typedEmail = req.body.email,
+      typedPass = req.body.password
 
   console.log(typedEmail, typedPass)
-
-  // var login => (err, user) {
-  //   if (user) {
-
-  //   }
-
-  // }
-
-  // User.findOne('email', login)
 
 })
 
