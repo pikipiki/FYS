@@ -43,8 +43,8 @@ Password : <input type="text" ng-model="$ctrl.password">
 <p ng-if="$ctrl.error">Error : <strong>{{ error }}</strong></p>
  -->
 
-  Email: <input type="text" ng-model="email">
-  Password: <input type="text" ng-model="password">
+  Email: <input type="text" ng-model="$ctrl.user.email">
+  Password: <input type="text" ng-model="$ctrl.user.password">
 
   <br><br>
 
@@ -54,6 +54,5 @@ Password : <input type="text" ng-model="$ctrl.password">
 
   <button ng-click="deleteUser()">Delete User</button>
 
-  <p ng-if="message">Message: <strong>{{ message }}</strong></p>
+  <p ng-if="$ctrl.message">Message: <strong>{{ $ctrl.message }}</strong></p>
   <p ng-if="$ctrl.error">Error: <strong>{{ $ctrl.error }}</strong></p>
-{{ $ctrl.error }}
