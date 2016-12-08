@@ -1,9 +1,16 @@
 var AuthFormController = function(AuthService){
 
   this.submit = function(){
-    AuthService.login(this.user)
-  }
 
+    AuthService.login(this.user)
+      .then(
+        () => console.log('works')
+      )
+      .catch(
+        (err) => console.log(err.message)
+      )
+  }
+  
 }
 
 angular
