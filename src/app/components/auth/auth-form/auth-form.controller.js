@@ -1,20 +1,10 @@
 var AuthFormController = function(AuthService){
 
-  this.createUser = function() {
-
-    return AuthService
-      .$createUserWithEmailAndPassword(this.user.email, this.user.password)
-      .then(
-        () => console.log('this works')    
-      )
-      .catch(
-        (error) => console.log(error)
-      )
-
+  this.submit = function(){
+    AuthService.login(this.user)
   }
 
 }
-
 
 angular
   .module('components.auth')

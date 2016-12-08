@@ -1,5 +1,18 @@
 var AuthService = function($firebaseAuth) {
-  return $firebaseAuth()
+
+  var auth = $firebaseAuth()
+
+  this.login = function(user) {     
+    auth.$createUserWithEmailAndPassword(user.email, user.password)
+      .then(
+        () => console.log('works')
+      )
+      .catch(
+        (err) => console.log(err.message)
+      )
+  }
+
+
 }
 
 angular
