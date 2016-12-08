@@ -2,15 +2,21 @@ var AuthFormController = function(AuthService){
 
   this.submit = function(){
 
+    this.message =  null
+    this.error = null
+
     AuthService.login(this.user)
       .then(
-        () => console.log('works')
+        () => 
+          this.msgSuccess = this.user.name + " was created with success"
       )
       .catch(
-        (err) => console.log(err.message)
+        (err) => {
+          this.error = err.message
+        }
       )
   }
-  
+
 }
 
 angular
