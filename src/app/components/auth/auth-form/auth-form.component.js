@@ -6,3 +6,10 @@ var authForm = {
 angular
   .module('components.auth')
   .component('authForm', authForm)
+  .config(function($stateProvider){
+    $stateProvider
+      .state('login', {
+        url: '/login',
+        component: 'authForm'
+      })
+  })

@@ -1,4 +1,4 @@
-<form action="#" method="post" id="form" name="myForm">
+<!-- <form action="#" method="post" id="form" name="myForm">
   <div class="row">
     <div class="input-field col s12 m12 l12">
       <label for="email">Email</label>
@@ -26,4 +26,34 @@
       </a>     
     </div>
   </div>
-</form>
+</form> -->
+
+<!-- Email : <input type="text" ng-model="$ctrl.email">
+Password : <input type="text" ng-model="$ctrl.password">
+
+<br><br>
+
+<button ng-click="$ctrl.createUser()">Create User</button>
+
+<br><br>
+
+<button ng-click="$ctrl.deleteUser()">Delete User</button>
+
+<p ng-if="$ctrl.message">Message : <strong>{{ $ctrl.message }}</strong></p>
+<p ng-if="$ctrl.error">Error : <strong>{{ error }}</strong></p>
+ -->
+
+  Email: <input type="text" ng-model="email">
+  Password: <input type="text" ng-model="password">
+
+  <br><br>
+
+  <button ng-click="$ctrl.createUser()">Create User</button>
+
+  <br><br>
+
+  <button ng-click="deleteUser()">Delete User</button>
+
+  <p ng-if="message">Message: <strong>{{ message }}</strong></p>
+  <p ng-if="$ctrl.error">Error: <strong>{{ $ctrl.error }}</strong></p>
+{{ $ctrl.error }}
