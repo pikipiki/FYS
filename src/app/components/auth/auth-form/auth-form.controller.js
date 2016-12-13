@@ -1,18 +1,20 @@
 var AuthFormController = function(AuthService){
 
-  this.submit = function(){
+  var self = this
 
-    this.message =  null
-    this.error = null
+  ctrl.submit = function(){
 
-    AuthService.login(this.user)
+    ctrl.message =  null
+    ctrl.error = null
+
+    AuthService.login(ctrl.user)
       .then(
         () => 
-          this.msgSuccess = this.user.name + " was created with success"
+          ctrl.msgSuccess = ctrl.user.name + " was created with success"
       )
       .catch(
         (err) => {
-          this.error = err.message
+          ctrl.error = err.message
         }
       )
   }
