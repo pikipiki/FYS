@@ -1,6 +1,6 @@
 var AuthFormController = function(AuthService){
 
-  var self = this
+  var ctrl = this
 
   ctrl.submit = function(){
 
