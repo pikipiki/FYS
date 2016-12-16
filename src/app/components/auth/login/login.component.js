@@ -1,5 +1,6 @@
 var login = {
-  templateUrl: 'components/auth/login/login.html'
+  templateUrl: 'components/auth/login/login.html',
+  controller: "LoginController"
 }
 
 angular

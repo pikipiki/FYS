@@ -1,6 +1,9 @@
 var authForm = {
   templateUrl: 'components/auth/auth-form/auth-form.html',
-  controller: 'AuthFormController'
+  controller: 'AuthFormController',
+  bindings: {
+    onSubmit: "&"
+  }
 }
 
 angular
