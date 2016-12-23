@@ -2,10 +2,9 @@ var AuthFormController = function(AuthService){
 
   var ctrl = this
 
-  // ctrl.truc = function(){
-  //   ctrl.bob({user: this.user})
-  // }
-
+  ctrl.truc = function(){
+    ctrl.bob({user: this.user})
+  }
 
 }
 
