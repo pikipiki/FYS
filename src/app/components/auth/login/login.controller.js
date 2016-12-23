@@ -4,20 +4,18 @@ var LoginController = function(AuthService) {
 
   // ctrl.login = function(user){
 
-  // AuthService.login(user)
-  //   .then(
-  //     () => console.log("success")
-  //   )
-  //   .catch(
-  //     () => console.log("fail")
-  //   )
-  // }
+  // // AuthService.login(user)
+  // //   .then(
+  // //     () => console.log("success")
+  // //   )
+  // //   .catch(
+  // //     () => console.log("fail")
+  // //   )
 
-  ctrl.message = function (msg) {
-
-    console.log(msg)
-
+  ctrl.login = function(user) {
+    console.log(user)
   }
+
 
 }
 

@@ -2,22 +2,10 @@ var AuthFormController = function(AuthService){
 
   var ctrl = this
 
-  ctrl.submit = function(){
+  // ctrl.truc = function(){
+  //   ctrl.bob({user: this.user})
+  // }
 
-    ctrl.message =  null
-    ctrl.error = null
-
-    AuthService.login(ctrl.user)
-      .then(
-        () => 
-          ctrl.msgSuccess = ctrl.user.name + " was created with success"
-      )
-      .catch(
-        (err) => {
-          ctrl.error = err.message
-        }
-      )
-  }
 
 }
 
