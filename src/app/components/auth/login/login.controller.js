@@ -4,15 +4,16 @@ var LoginController = function(AuthService) {
 
   ctrl.login = function(event) {
     ctrl.user = event.user
+    ctrl.success = function() {
+      ctrl.msg = "Login Success"
+    }
+    ctrl.fail = function(err) {
+      ctrl.msg = err
+    }
     return AuthService.login(ctrl.user)
-           .then(
-              () => console.log('login success')
-            )
-           .catch(
-              (err) => console.log(err)
-            )
+           .then(ctrl.success)
+           .catch(ctrl.fail)
   }
-
 
 }
 

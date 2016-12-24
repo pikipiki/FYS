@@ -1,6 +1,8 @@
 <div class="auth container">
   <h1 class="center-align">Login</h1>
   <auth-form
+    button="Log in"
+    message="{{ $ctrl.msg }}"
     on-submit="$ctrl.login($event)"
   ></auth-form>
 </div>
