@@ -10,7 +10,6 @@ var AuthFormController = function(AuthService){
     })
   }
 
-
 }
 
 angular

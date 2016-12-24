@@ -2,15 +2,18 @@ var RegisterController = function(AuthService) {
   var ctrl = this
 
   ctrl.register = function(event) {
-    ctrl.user = event.user
-    return AuthService.register(ctrl.user)
-           .then(
-              () => console.log('success')
-            )
-           .catch(
-              (err) => console.log(err)
-            )
+    ctrl.success = function() {
+      ctrl.msg = "Register successful"
+    }
+    ctrl.fail = function(err) {
+      ctrl.msg = err
+    }
+
+    return AuthService.register(event.user)
+           .then(ctrl.success)
+           .catch(ctrl.fail)
   }
+  
 } 
 
 angular
