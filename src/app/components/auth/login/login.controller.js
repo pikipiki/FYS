@@ -1,4 +1,4 @@
-var LoginController = function(AuthService) {
+var LoginController = function(AuthService, $state) {
 
   var ctrl = this
 
@@ -6,6 +6,7 @@ var LoginController = function(AuthService) {
     ctrl.user = event.user
     ctrl.success = function() {
       ctrl.msg = "Login Success"
+      $state.go('upload-pics')
     }
     ctrl.fail = function(err) {
       ctrl.msg = err
