@@ -4,6 +4,11 @@ var AuthService = function($firebaseAuth) {
 
   this.login = function(user) {     
     return auth
+      .$signInWithEmailAndPassword(user.email, user.password)
+  }
+
+  this.register = function(user) {
+    return auth
       .$createUserWithEmailAndPassword(user.email, user.password)
   }
 

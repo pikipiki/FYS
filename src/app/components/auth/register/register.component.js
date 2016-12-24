@@ -1,5 +1,6 @@
 var register = {
   templateUrl: 'components/auth/register/register.html',
+  controller: 'RegisterController'
 }
 
 angular
