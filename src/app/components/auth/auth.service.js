@@ -12,6 +12,8 @@ var AuthService = function($firebaseAuth) {
       .$createUserWithEmailAndPassword(user.email, user.password)
   }
 
+  this.auth = false
+
 }
 
 angular

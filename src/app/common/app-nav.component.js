@@ -1,5 +1,6 @@
 var appNav = {
-  templateUrl: 'common/app-nav.html'
+  templateUrl: 'common/app-nav.html',
+  controller: 'AppNavController'
 }
 
 angular
