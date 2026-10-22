@@ -11,23 +11,23 @@
   "license": "ISC",
   "dependencies": {
     "angular": "^1.5.9",
-    "angular-ui-router": "^1.0.0-beta.3",
-    "angularfire": "^2.1.0",
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "firebase": "^3.6.3",
-    "jquery": "^3.1.1",
-    "materialize-css": "^0.97.8",
-    "mongoose": "^4.7.1",
-    "multer": "^1.2.0"
+    "angular-ui-router": "^1.1.2",
+    "angularfire": "^2.3.0",
+    "body-parser": "^1.20.9",
+    "express": "^4.22.3",
+    "firebase": "^3.9.0",
+    "jquery": "^3.7.1",
+    "materialize-css": "^0.100.2",
+    "mongoose": "^4.13.21",
+    "multer": "^1.4.4"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sourcemaps": "^2.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.5",
     "gulp-sources-less": "^1.0.1",
-    "gulp-uglify": "^2.0.0",
-    "less-plugin-clean-css": "^1.5.1"
+    "gulp-uglify": "^2.1.2",
+    "less-plugin-clean-css": "^1.6.0"
   }
 }
